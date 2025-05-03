@@ -812,3 +812,39 @@ footer {
         padding: 20px;
     }
 }
+.btn-tertiary {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, var(--red) 0%, #ff6b4a 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    box-shadow: none;
+}
+
+.btn-tertiary i {
+    margin-right: 8px;
+}
+
+.btn-tertiary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 58, 58, 0.3);
+    background: linear-gradient(135deg, var(--dark-red) 0%, #e05a3a 100%);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero-buttons .btn-tertiary,
+    .cta-buttons .btn-tertiary {
+        margin: 10px 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
